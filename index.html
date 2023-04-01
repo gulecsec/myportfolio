@@ -44,6 +44,37 @@
 						</ul>
 					</div>
 
+          <script>
+            // Define the text to be typed
+            const text = "SELCAN GULEC's PORTFOLIO";
+
+            // Get the headline element
+            const headline = document.getElementById("headline");
+
+            // Set the initial text content to an empty string
+            headline.textContent = "";
+
+            // Define a function to add a single character to the headline
+            function addChar() {
+                // Get the current text content of the headline
+                const currentText = headline.textContent;
+
+                // Get the next character in the text to be typed
+                const nextChar = text.charAt(currentText.length);
+
+                // Add the next character to the headline
+                headline.textContent = currentText + nextChar;
+            }
+
+            // Define the duration of the typing effect (in milliseconds)
+            const duration = 50;
+
+            // Start the typing effect by adding a new character to the headline every 'duration' milliseconds
+            setInterval(addChar, duration);
+        </script>
+
+    </div>
+
 				<!-- Header -->
 					<header id="header">
 						<a href="index.html" class="logo">SELCAN GULEC</a>
