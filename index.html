@@ -162,18 +162,7 @@
 									</ul>
 								</article>
 
-
-
-
-
-
               </section>
-
-
-
-
-
-
 
 						<section class="split contact">
 							<section class="alt">
@@ -217,12 +206,14 @@
       <!-- Main JavaScript file -->
       <script src="assets/js/main.js"></script>
 
+      <!-- Add the following script to hide the loader once the page loads -->
+      <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loader-wrapper");
+          loader.className += " hidden"; // class "loader hidden"
+        });
+      </script>
+
+
 	</body>
 </html>
-<!-- Add the following script to hide the loader once the page loads -->
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loader-wrapper");
-    loader.className += " hidden"; // class "loader hidden"
-  });
-</script>
