@@ -221,3 +221,10 @@
 
 	</body>
 </html>
+<!-- Add the following script to hide the loader once the page loads -->
+<script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader-wrapper");
+    loader.className += " hidden"; // class "loader hidden"
+  });
+</script>
