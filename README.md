@@ -32,8 +32,8 @@ $ open index.html
 <p>Demo Images were sourced from <a href="unsplash.com">Unsplash</a>.</p>
 <p>Icons were sourced from <a href="fontawesome.io"</a>Font Awesome.</p>
 <p>Others were sourced from <a href="jquery.com"</a>jQuery.</p>
-  <p><a href="github.com/ajlkn/jquery.scrollex"</a>Scrollex,</p>
-  <p><a href="github.com/ajlkn/responsive-tools"</a>Responsive Tools.</p>
+<p>"" <a href="github.com/ajlkn/jquery.scrollex"</a>Scrollex,</p>
+<p> <a href="github.com/ajlkn/responsive-tools"</a>Responsive Tools.</p>
 <p>The site templates were obtained from <a href="https://html5up.net/">html5up.net</a>html5up.</p>
 
   
