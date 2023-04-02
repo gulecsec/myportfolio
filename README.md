@@ -30,7 +30,7 @@ $ open index.html
 
   <h2>Credits</h2>
 <p>Demo Images were sourced from <a href="unsplash.com">Unsplash</a>.</p>
-<p>Icons were sourced from <a href="fontawesome.io"</a>""</p>
+<p>Icons were sourced from <a href="fontawesome.io"</a>"Font Awesome"</p>
 <p>Others were sourced from <a href="jquery.com"></a>jQuery.</p>
   <p><a href="github.com/ajlkn/jquery.scrollex"></a>Scrollex,</p>
   <p><a href="github.com/ajlkn/responsive-tools"></a>Responsive Tools.</p>
