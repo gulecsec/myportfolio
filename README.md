@@ -29,7 +29,10 @@ $ open index.html
 </code></pre>
 
   <h2>Credits</h2>
-  <p>The code for the loading animation was adapted from <a href="https://projects.lukehaas.me/css-loaders/">https://projects.lukehaas.me/css-loaders/</a>. The icons used in the project gallery were obtained from Font Awesome.</p>
+<p>Demo Images were adapted from <a href="unsplash.com">Unsplash</a>. The icons used in the project gallery were obtained from Font Awesome.</p>
+<p>The site templates were obtained from <a href="https://html5up.net/">html5up.net</a>. </p>
+
+  
   <h2>License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details.</p>
   
