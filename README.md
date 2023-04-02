@@ -36,12 +36,7 @@ $ open index.html
 <p>The site templates were obtained from <a href="https://html5up.net/"</a>html5up.</p>
    <p>Thanks for all.</p>
 
-  
-  <h2>License</h2>
-<p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details.</p>
-  
-</body>
-</html>
+ 
 
 
 
