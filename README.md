@@ -29,10 +29,12 @@ $ open index.html
 </code></pre>
 
   <h2>Credits</h2>
+ 
 <p>Demo Images were sourced from <a href="unsplash.com">Unsplash</a>.</p>
 <p>Icons were sourced from <a href="fontawesome.io"</a>Font Awesome.</p>
 <p>Others were sourced from <a href="jquery.com"</a>jQuery, <a href="github.com/ajlkn/jquery.scrollex"</a>Scrollex, <a href="github.com/ajlkn/responsive-tools"</a>Responsive Tools.</p>
 <p>The site templates were obtained from <a href="https://html5up.net/"</a>html5up.</p>
+   <p>Thanks for all.</p>
 
   
   <h2>License</h2>
