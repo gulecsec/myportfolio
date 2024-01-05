@@ -78,7 +78,8 @@
     }
 
     /* Style for the home button */
-    .home-btn {
+    .home-btn,
+    .work-btn {
       display: inline-block;
       background-color: #3498db;
       color: #fff;
@@ -90,18 +91,14 @@
       cursor: pointer;
     }
 
-    .home-btn:hover {
+    .home-btn:hover,
+    .work-btn:hover {
       background-color: #2980b9;
     }
 
-    /* Style for the work experiences link */
-    .work-link {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: #3498db;
-      text-decoration: none;
-      font-weight: bold;
+    /* Style for the work button icon */
+    .work-icon {
+      margin-right: 8px;
     }
 
     /* Footer styles */
@@ -140,7 +137,6 @@
 
 <body>
   <div class="container">
-    <a href="work-experiences.html" class="work-link">Work Experiences</a>
     <h1>Embark on My Colorful Journey</h1>
     <p>Welcome to my vibrant corner on the web! 🌟 I'm Selcan Gulec, a meticulous Planning Engineer with a love for data as a Junior Data Scientist.</p>
 
@@ -159,7 +155,19 @@
 
     <!-- Home button -->
     <a href="index.html" class="home-btn">🏠 Go Back to Home</a>
+
+    <!-- Work Experiences button -->
+    <a href="work-experiences.html" class="work-btn">👷‍♂️ Work Experiences</a>
   </div>
+
+  <footer>
+    <h3>Stay Connected</h3>
+    <!-- Social icons -->
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/sgulec/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/gulecsec" target="_blank"><i class="fa fa-github"></i></a></li>
+    </ul>
+  </footer>
 
   <script>
     function showImage() {
