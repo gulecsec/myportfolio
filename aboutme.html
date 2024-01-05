@@ -47,7 +47,10 @@
     .image-container {
       text-align: center;
       margin-top: 20px;
-      position: relative;.hover-image {
+      position: relative;
+    }
+
+    .hover-image {
       display: none;
       position: absolute;
       top: 0;
@@ -71,10 +74,44 @@
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s;
+      margin-top: 20px;
+      cursor: pointer;
     }
 
     .home-btn:hover {
       background-color: #2980b9;
+    }
+
+    /* Style for the footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer h3 {
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    /* Social icons */
+    ul.icons {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.icons li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    ul.icons a {
+      color: #3498db;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    ul.icons a:hover {
+      color: #2980b9;
     }
   </style>
 </head>
@@ -86,13 +123,11 @@
 
     <p>My journey involves <span class="highlight">turning ideas into reality</span> through meticulous planning and <span class="highlight">discovering stories in data</span>. I thrive on challenges and love to explore new technologies to enhance my skills.</p>
 
-    <p>When I'm not coding or planning projects, you'll find me enjoying a cup of coffee ☕, watching Premier League, or playing with my little chihuahua, Addie.</p>
-
+    <p>When I'm not coding or planning projects, you'll find me enjoying a cup of coffee ☕, watching Premier League, or playing with my little chihuahua, Addie. Hover over <a href="#" class="highlight" onmouseover="showImage()" onmouseout="hideImage()">Addie</a> to see the cuteness!</p>
 
     <div class="image-container">
-  <img src="images/Addie.jpg" alt='Thaddeus Stevens, AKA "Addie"' class="hover-image" style="width: 300px; max-width: 100%;" />
-</div>
-
+      <img src="images/Addie.jpg" alt='Thaddeus Stevens, AKA "Addie"' class="hover-image" style="width: 300px; max-width: 100%;" />
+    </div>
 
     <p>Connect with me on <a href="https://www.linkedin.com/in/sgulec/" target="_blank" class="highlight">LinkedIn</a> or check out my coding adventures on <a href="https://github.com/gulecsec" target="_blank" class="highlight">GitHub</a>.</p>
 
@@ -111,6 +146,17 @@
       <li><a href="https://github.com/gulecsec" target="_blank"><i class="fa fa-github"></i></a></li>
     </ul>
   </footer>
+
+  <script>
+    function showImage() {
+      document.querySelector('.hover-image').style.display = 'block';
+    }
+
+    function hideImage() {
+      document.querySelector('.hover-image').style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
+
