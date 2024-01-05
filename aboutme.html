@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>About Me - SELCAN GULEC's VIBRANT PORTFOLIO</title>
+  <title>About Me</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
     /* Add custom styles for the About Me page */
@@ -28,10 +28,9 @@
     }
 
     h1 {
-      color: #ff7f50;
+      color: #3498db;
       text-align: center;
       margin-bottom: 20px;
-      font-size: 2.5em;
     }
 
     p {
@@ -48,22 +47,26 @@
     .image-container {
       text-align: center;
       margin-top: 20px;
-    }
-
-    img {
+      position: relative;.hover-image {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px; /* Adjust the width as needed */
       max-width: 100%;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Home button styles */
-    .home-btn {
+    .image-container:hover .hover-image {
       display: block;
-      margin-top: 20px;
-      text-align: center;
-      font-size: 1.2em;
-      color: #fff;
+    }
+
+    /* Style for the home button */
+    .home-btn {
+      display: inline-block;
       background-color: #3498db;
+      color: #fff;
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
@@ -72,47 +75,6 @@
 
     .home-btn:hover {
       background-color: #2980b9;
-    }
-
-    /* Footer styles */
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      background-color: #2c3e50;
-      padding: 20px;
-      border-radius: 0 0 10px 10px;
-    }
-
-    footer h3 {
-      color: #ff7f50;
-    }
-
-    footer p,
-    footer a {
-      color: #ecf0f1;
-    }
-
-    /* Social icons styles */
-    .icons {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .icons li {
-      margin: 0 10px;
-    }
-
-    .icons a {
-      color: #ecf0f1;
-      font-size: 1.5em;
-      transition: color 0.3s;
-    }
-
-    .icons a:hover {
-      color: #ff7f50;
     }
   </style>
 </head>
@@ -128,7 +90,7 @@
 
 
     <div class="image-container">
-  <img src="images/Addie.jpg" alt='Thaddeus Stevens, AKA "Addie"' style="width: 300px; max-width: 100%;" />
+  <img src="images/Addie.jpg" alt='Thaddeus Stevens, AKA "Addie"' class="hover-image" style="width: 300px; max-width: 100%;" />
 </div>
 
 
