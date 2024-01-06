@@ -25,12 +25,28 @@
       border-radius: 10px;
       overflow: hidden;
     }
+    
     h1 {
-      color: #3498db;
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 10px;
-    }
+  color: #3498db; /* Primary color */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Modern font style */
+  font-weight: bold; /* Make it bold */
+  text-transform: uppercase; /* Capitalize for impact */
+  letter-spacing: 2px; /* More space between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+
+  /* Adding a simple animation */
+  animation: fadeIn 2s ease-in-out;
+
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+    
     h2 {
       color: #333;
       margin-top: 10px;
