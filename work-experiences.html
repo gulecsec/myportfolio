@@ -190,10 +190,9 @@
 
   <script>
     function toggleDetails(element) {
-      const experience = element.parentNode;
-      experience.classList.toggle("open");
+      const detailsSection = element.nextElementSibling;
+      detailsSection.classList.toggle("open");
     }
-  </script>
-</body>
+</script>
 
 </html>
