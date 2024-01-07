@@ -61,22 +61,22 @@
     }
 
     p, .image-container {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.5s ease-out forwards;
-    }
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0; /* Start with the image hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for the fade-in effect */
+}
 
     .hover-image {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 300px;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    .highlight:hover + .image-container,
+.image-container:hover {
+  opacity: 1; /* Show image on hover */
+}
 @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -94,9 +94,6 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
     
-    .image-container:hover .hover-image {
-      display: block;
-    }
 
     /* Style for the home button */
     .home-btn,
@@ -185,22 +182,11 @@
     
   </div>
 
-  
-
-  <script>
-    function showImage() {
-      document.querySelector('.hover-image').style.display = 'block';
-    }
-
-    function hideImage() {
-      document.querySelector('.hover-image').style.display = 'none';
-    }
-  </script>
   <script>
     // Assigning animation delay based on element order
     document.querySelectorAll('.container > *').forEach((element, index) => {
-      element.style.animationDelay = `${0.3 + 0.2 * index}s`;
-    });
+  element.style.animationDelay = `${0.3 + 0.2 * index}s`;
+});
   </script>
 </body>
 
