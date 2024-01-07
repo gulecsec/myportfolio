@@ -375,4 +375,17 @@
      </div>
 
 </body>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var skills = document.querySelectorAll('.language-skill');
+  for (var i = 0; i < skills.length; i++) {
+    (function(i) {
+      setTimeout(function() {
+        skills[i].style.opacity = '1';
+        skills[i].style.transform = 'translateY(0)';
+      }, 300 * i);
+    })(i);
+  }
+});
+     </script>
 </html>
