@@ -133,6 +133,43 @@
       margin-top: 0; 
       margin-bottom: 10px;
     }
+    a {
+      color: #3498db; /* Hyperlink color */
+      text-decoration: none; /* Removes underline */
+      position: relative;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #e74c3c; /* Underline color */
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    a:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .download-btn {
+  display: inline-block;
+  background-color: #3498db; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline from link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.download-btn:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
   </style>
 
 </head>
