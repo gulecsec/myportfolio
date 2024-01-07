@@ -64,10 +64,11 @@
       font-weight: bold;
     }
 
-    .image-container {
-      text-align: center;
-      margin-top: 20px;
-      position: relative;
+    /* Subtle Animations for Text Content */
+    p, .image-container {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s ease-out forwards;
     }
 
     .hover-image {
