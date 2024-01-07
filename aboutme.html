@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -173,6 +172,12 @@
     function hideImage() {
       document.querySelector('.hover-image').style.display = 'none';
     }
+  </script>
+  <script>
+    // Assigning animation delay based on element order
+    document.querySelectorAll('.container > *').forEach((element, index) => {
+      element.style.animationDelay = `${0.3 + 0.2 * index}s`;
+    });
   </script>
 </body>
 </html>
