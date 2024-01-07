@@ -7,9 +7,7 @@ al<!DOCTYPE html>
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" type="image/jpg" href="images/My Icon.JPG">
   <style>
-    /* Your existing styles */
-    /* ... */
-<style>
+
     /* Add custom styles for the About Me page */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,35 +103,50 @@ al<!DOCTYPE html>
     }
 
 
-    /* Additional styles for competencies page */
     .competency {
-      background-color: #e6f2ff;
+      background-color: #eef6fc;
+      border-left: 4px solid #3498db;
       margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .competency h2 {
       color: #0c3451;
+      font-size: 1.5em;
       margin-bottom: 10px;
     }
 
-    .competency p {
-      color: #071824;
-      font-size: 1em;
+    .competency ul {
+      list-style-type: square;
+      margin-left: 20px;
     }
 
-    .skill-list {
-      list-style-type: none;
-      padding: 0;
+    .competency li {
+      margin-bottom: 5px;
     }
 
-    .skill-list li {
-      background-color: #d1e0f0;
-      margin: 5px 0;
-      padding: 5px 10px;
-      border-radius: 4px;
+    /* Style for skill bars */
+    .skill-bar {
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .skill-bar-fill {
+      background: #3498db;
+      height: 20px;
+      width: 0;
+      border-radius: 5px;
+      transition: width 1s ease-in-out;
+    }
+
+    /* Animation for skill bars */
+    .skill-bar-fill.animate {
+      width: 90%; /* Adjust based on skill level */
     }
 
     /* Style adjustments for buttons */
@@ -145,27 +158,51 @@ al<!DOCTYPE html>
 </head>
 <body>
   <div class="container">
-    <h1>My Professional Competencies</h1>
+    <h1>My Competencies and Skills</h1>
 
     <!-- Competency Section -->
     <div class="competency">
       <h2>Project Management</h2>
-      <p>Detail your experience and skills in project management, especially in the context of data center construction.</p>
-      <!-- Add more paragraphs as needed -->
-    </div>
-
-    <div class="competency">
-      <h2>Technical Proficiency</h2>
-      <ul class="skill-list">
-        <li>Primavera P6</li>
-        <li>Advanced Excel for Project Analysis</li>
-        <!-- Add more skills as needed -->
+      <ul>
+        <li>Proficient in Primavera P6 and MS Project</li>
+        <li>Experienced in Agile and Waterfall methodologies</li>
+        <!-- More items here -->
       </ul>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 85%;"></div> <!-- Adjust width based on skill level -->
+      </div>
     </div>
 
+    <!-- Add more competency sections as needed -->
+    <!-- Example: Technical Skills -->
     <div class="competency">
-      <h2>Other Relevant Skills</h2>
-     </div>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Advanced Excel capabilities, including VBA and macros</li>
+        <li>Data analysis and visualization</li>
+        <!-- More items here -->
+      </ul>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 90%;"></div> <!-- Adjust width based on skill level -->
+      </div>
+    </div>
+
         
     <a href="index.html" class="home-btn">🏠 Homepage</a>
-    <a href="work-experiences.html" class="work-btn">👷‍♂️ Professional Experience</a>
+    <a href="work-experiences.html" class="work-btn">💼 Professional Experience</a>
+     </div>
+ <script>
+    // JavaScript to animate skill bars on scroll/view
+    window.addEventListener('scroll', function() {
+      var elements = document.getElementsByClassName('skill-bar-fill');
+      for(var i = 0; i < elements.length; i++) {
+        var elementPosition = elements[i].getBoundingClientRect().top;
+        var viewPortHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (elementPosition <= viewPortHeight - 50) {
+          elements[i].classList.add('animate');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
