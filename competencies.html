@@ -38,11 +38,36 @@
   }
 
   h1 {
-    color: #3498db;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 22px; /* Reduced font size */
+  color: #0c3451; /* Retaining primary color */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Modern font style */
+  font-weight: bold; /* Bold font */
+  text-transform: uppercase; /* Uppercase for impact */
+  letter-spacing: 2px; /* Increased letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+
+  /* Gradient text color */
+  background: -webkit-linear-gradient(#0c3451, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* More complex animation */
+  animation: fadeInScale 2s ease-in-out;
+
+  /* Animation keyframes */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
+}
 
   p {
     font-size: 1.2em;
