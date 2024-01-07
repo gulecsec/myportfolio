@@ -138,6 +138,30 @@
   .competencies-btn {
     margin-right: 10px;
   }
+
+    a {
+      color: #3498db; /* Hyperlink color */
+      text-decoration: none; /* Removes underline */
+      position: relative;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #e74c3c; /* Underline color */
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    a:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
 </style>
 </head>
 <body>
