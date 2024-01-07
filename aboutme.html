@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" type="image/jpg" href="images/My Icon.JPG">
   <style>
+    
     /* Add custom styles for the About Me page */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,25 +62,29 @@
     }
 
     p, .image-container {
-  text-align: center;
-  margin-top: 20px;
-  opacity: 0; /* Start with the image hidden */
-  transition: opacity 0.5s ease; /* Smooth transition for the fade-in effect */
-}
-
+      text-align: center;
+      margin-top: 20px;
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
     .hover-image {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+      width: 300px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
     .highlight:hover + .image-container,
-.image-container:hover {
-  opacity: 1; /* Show image on hover */
-}
-@keyframes fadeInUp {
-      to {
+    .image-container:hover {
+      opacity: 1; /* Show image on hover */
+    }
+    
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -155,7 +160,6 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <h1>Embark on My Colorful Journey</h1>
@@ -186,9 +190,9 @@
   <script>
     // Assigning animation delay based on element order
     document.querySelectorAll('.container > *').forEach((element, index) => {
-  element.style.animationDelay = `${0.3 + 0.2 * index}s`;
-});
+      element.style.animationDelay = `${0.3 + 0.2 * index}s`;
+    });
   </script>
+  
 </body>
-
 </html>
