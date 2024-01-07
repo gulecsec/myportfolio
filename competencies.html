@@ -201,6 +201,40 @@
 .download-btn:hover {
   background-color: #2980b9; /* Darker shade on hover */
 }
+
+  .skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.language-skill {
+  background-color: #d1e0f0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.language-skill:hover {
+  background-color: #b0c4de; /* Lighter shade on hover */
+  transform: translateY(-5px);
+}
+
+/* Color coding based on proficiency */
+.language-skill[data-skill="native"] {
+  border-left: 4px solid #3498db; /* Blue for native */
+}
+
+.language-skill[data-skill="professional"] {
+  border-left: 4px solid #2ecc71; /* Green for professional */
+}
+
+.language-skill[data-skill="intermediate"] {
+  border-left: 4px solid #f1c40f; /* Yellow for intermediate */
+}
     
 </style>
 </head>
@@ -328,10 +362,11 @@
     <div class="competency">
       <h2>Languages</h2>
       <ul class="skill-list">
-        <li>Turkish: Native proficiency</li>
-        <li>English: Professional working proficiency</li>
-        <li>Spanish: Intermediate proficiency</li>
-     </div>
+        <li class="language-skill" data-skill="native">Turkish: Native proficiency</li>
+        <li class="language-skill" data-skill="professional">English: Professional working proficiency</li>
+        <li class="language-skill" data-skill="intermediate">Spanish: Intermediate proficiency</li>
+      </ul>
+    </div>
         
     <a href="index.html" class="home-btn">🏠 Homepage</a>
     <a href="work-experiences.html" class="work-btn">💼 Professional Experience</a>
